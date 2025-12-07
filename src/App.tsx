@@ -1,10 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import ProductList from "./components/productList"
+import Cart from "./components/Cart"
+import ProductItems from "./components/ProductItems"
 
 function App (){
   return (<>
-    <div className="bg-blue-700">
-      <ProductList/>
-    </div>
+    <BrowserRouter>
+    <ProductList/>
+      <Routes>
+        <Route path="/" element={<ProductItems/>}></Route>
+        <Route path="/cart" element={<Cart/>}/>
+      </Routes>
+    </BrowserRouter>
   </>)
 }
 
