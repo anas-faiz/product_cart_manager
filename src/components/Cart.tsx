@@ -1,7 +1,9 @@
-function Cart (){
+import CartItems from "./CartItems"
+
+function Cart ({cartList}){
     return (
         <div>
-                CArt
+                <CartItems cartList/>
         </div>
     )
 }
