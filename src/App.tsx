@@ -2,7 +2,7 @@ import ProductList from "./components/productList"
 
 function App (){
   return (<>
-    <div className="">
+    <div className="bg-blue-700">
       <ProductList/>
     </div>
   </>)
